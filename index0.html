@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>S.M.R.</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/custom/favicon.ico">
+	<style>
+	body {
+  /* Location of the image */
+  background-image: url(images/custom/cover0.gif);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: 100% 100%;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+	</style>
+	
+	<script>
+	function enterPressed(event) 
+	{
+    	if (event.which == 13) {
+    	    document.body.style.backgroundImage="url('images/custom/cover1.PNG')";
+    	    setTimeout(function () 
+    	    {   			
+    	    	 window.location.href = "index.html";}, 2000);
+    		}
+	}
+	</script>
+	
+	</head>
+	<body onkeypress="enterPressed(event)">
+	</body>
+</html>
