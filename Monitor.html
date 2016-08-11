@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Monitor</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+	          <section>
+					<h3>Prototipo Visual</h3>          	
+	      		   <img src="images/monitor/vp/0.png">
+	          </section>
+	        
+	        <section>
+	         	<section>
+					<h3>Prototipo Funcional</h3>          	
+	      		   <img src="images/monitor/fp/0.png">
+	           </section>
+	           <section>
+	           		<h4>simulando notificación</h4>          	
+	      		   <img src="images/monitor/fp/1.png">
+	          	</section>
+	         </section> 
+	          <section>
+	          	<section id="fragments" data-background="#FFFFFF">
+							<h2 style="color: #A60000">MENSAJES</h2>
+							<p class="fragment">Métodos para guiar al usuario.</p>
+							<p class="fragment">se activan de manera automática.</p>
+							<p class="fragment">Y son sonoros, de notificación, validación.</p>
+				</section>
+	          	<section data-background="#FFFFFF">
+	          		<h4 style="color: #A60000">Sonoros</h4>         	
+	       		   	<audio src="images/monitor/tracks/failure.wav" controls="controls"  preload=""></audio>
+	          	</section>     	
+	          </section>
+		   	<section>
+		          	<section>
+		        		<h1>Implementado</h1>          	
+		       		</section>
+		          	<section data-background-video="videos/monitor.mp4,videos/monitor.webm">        	
+		       		</section>
+		    </section>       
+			<section data-background="images/monitor/gifs/0.gif" >
+				<h1 style="color: white">conclusiones</h1>  	
+	        </section>
+			<section data-background="images/monitor/gifs/1.gif">          	
+	       		<h1 style="color: white">recomendaciones  	
+	        </section></h1> 
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({controls: true,progress: true,history: true,center: true,transition: 'zoom',dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

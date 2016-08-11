@@ -1,75 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html >
 	<head>
 		<title>S.M.R.</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/custom/favicon.ico">
-		<link href='fuentes/stylesheet.css' rel='stylesheet' type='text/css'>	
-		<script src="lib/jquery-1.11.1.min.js"></script>
-		<script src="lib/quintus.js"></script>
-		<script src="lib/quintus_2d.js"></script>
-		<script src="lib/quintus_anim.js"></script>
-		<script src="lib/quintus_audio.js"></script>
-		<script src="lib/quintus_input.js"></script>
-		<script src="lib/quintus_scenes.js"></script>
-		<script src="lib/quintus_sprites.js"></script>
-		<script src="lib/quintus_tmx.js"></script>
-		<script src="lib/quintus_touch.js"></script>
-		<script src="lib/quintus_ui.js"></script>
+	<style>
+	body 
+	{
+  		background-image: url(images/custom/cover0.gif);
+ 	 	background-repeat: no-repeat;
+ 	    background-attachment: fixed;
+  		background-size: 100% 100%;
+  		background-color: #464646;
+	}
+	</style>
+	
+	<script>
+	function enterPressed(event) 
+	{
+    	if (event.which == 13) 
+    	{
+    	    document.body.style.backgroundImage="url('images/custom/cover1.PNG')";
+    	    setTimeout(function () 
+    	    {   			
+    	    	window.location.href = "index0.html";
+    	    }, 2000);
+    	}
+	}
+	</script>
+	
 	</head>
-	<body>
-		<canvas width="600px" height="480px" id="juego">
-			
-			
-			
-			
-		</canvas>
-		<script src="juego/inicializar.js"></script>
-		
-		<script src="juego/inges/juan.js"></script>
-		<script src="juego/inges/raymundo.js"></script>
-		
-		<script src="juego/jugador.js"></script>
-		<script src="juego/caja.js"></script>
-		<script src="juego/caja2.js"></script>
-		<script src="juego/caja3.js"></script>
-		
-		<script src="juego/tecnos/tecnos.js"></script>
-        <script src="juego/tecnos/bt0.js"></script>
-        <script src="juego/tecnos/bt1.js"></script>
-        <script src="juego/tecnos/bt2.js"></script>
-        <script src="juego/tecnos/bt3.js"></script>
-        <script src="juego/tecnos/bt4.js"></script>
-        <script src="juego/tecnos/bt5.js"></script>
-        <script src="juego/tecnos/bt6_0.js"></script>
-        <script src="juego/tecnos/bt6_1.js"></script>
-        <script src="juego/tecnos/bt7.js"></script>
-        <script src="juego/tecnos/bt8.js"></script>
-        <script src="juego/tecnos/bt9.js"></script>
-        <script src="juego/tecnos/bt10.js"></script>
-        <script src="juego/tecnos/bt11.js"></script>
-        <script src="juego/tecnos/bt12.js"></script>
-        
-
-		
-        <script src="juego/arrows/arrow_left0.js"></script>
-        <script src="juego/arrows/arrow_left1.js"></script>
-        <script src="juego/arrows/arrow_left_top.js"></script>
-        <script src="juego/arrows/arrow_down.js"></script>
-        <script src="juego/arrows/flag.js"></script>
-		
-		
-        <script src="juego/uesx_entrada.js"></script>
-        <script src="juego/family.js"></script>
-       
-		<script src="juego/moneda.js"></script>
-		<script src="juego/componentes.js"></script>
-		<script src="juego/tuberia.js"></script>
-		<script src="juego/tuberia_salida.js"></script>
-		<script src="juego/tuberia_regreso.js"></script>
-		<script src="juego/level_end.js"></script>
-		<script src="juego/escena_mundo1.js"></script>
-		<script src="juego/escena_subterranea.js"></script>
-		<script src="juego/score.js"></script>
-		<script src="juego/cargar_recursos.js"></script>
+	<body onkeypress="enterPressed(event)">
 	</body>
 </html>

@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html >
+<html>
 	<head>
 		<title>S.M.R.</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/custom/favicon.ico">
-	<style>
-	body {
-  /* Location of the image */
-  background-image: url(images/custom/cover0.gif);
-  
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: 100% 100%;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #464646;
-}
-	</style>
-	
-	<script>
-	function enterPressed(event) 
-	{
-    	if (event.which == 13) {
-    	    document.body.style.backgroundImage="url('images/custom/cover1.PNG')";
-    	    setTimeout(function () 
-    	    {   			
-    	    	 window.location.href = "index.html";}, 2000);
-    		}
-	}
-	</script>
-	
+		<link href='fuentes/stylesheet.css' rel='stylesheet' type='text/css'>	
+		<script src="lib/jquery-1.11.1.min.js"></script>
+		<script src="lib/quintus.js"></script>
+		<script src="lib/quintus_2d.js"></script>
+		<script src="lib/quintus_anim.js"></script>
+		<script src="lib/quintus_audio.js"></script>
+		<script src="lib/quintus_input.js"></script>
+		<script src="lib/quintus_scenes.js"></script>
+		<script src="lib/quintus_sprites.js"></script>
+		<script src="lib/quintus_tmx.js"></script>
+		<script src="lib/quintus_touch.js"></script>
+		<script src="lib/quintus_ui.js"></script>
 	</head>
-	<body onkeypress="enterPressed(event)">
+	<body bgcolor="#E75F13">
+		<canvas id="juego"></canvas>
+		<script src="core/init.js"></script>
+		<script src="core/inges.js"></script>
+		<script src="core/jugador.js"></script>
+		<script src="core/justificacion.js"></script>
+		<script src="core/objetivos.js"></script>
+		<script src="core/tecnos/tecnos.js"></script>
+        <script src="core/tecnos/bt0.js"></script>
+        <script src="core/tecnos/bt1.js"></script>
+        <script src="core/tecnos/bt2.js"></script>
+        <script src="core/tecnos/bt3.js"></script>
+        <script src="core/tecnos/bt4.js"></script>
+        <script src="core/tecnos/bt5.js"></script>
+        <script src="core/tecnos/bt6_0.js"></script>
+        <script src="core/tecnos/bt6_1.js"></script>
+        <script src="core/tecnos/bt7.js"></script>
+        <script src="core/tecnos/bt8.js"></script>
+        <script src="core/tecnos/bt9.js"></script>
+        <script src="core/tecnos/bt10.js"></script>
+        <script src="core/tecnos/bt11.js"></script>
+        <script src="core/tecnos/bt12.js"></script>
+        <script src="core/arrows.js"></script>
+        <script src="core/flag.js"></script>
+        <script src="core/uesx.js"></script>
+        <script src="core/family.js"></script>
+		<script src="core/coin.js"></script>
+		<script src="core/pipelines.js"></script>
+		<script src="core/end_song.js"></script>
+		<script src="core/w0.js"></script>
+		<script src="core/w1.js"></script>
+		<script src="core/w2.js"></script>
+		<script src="core/score.js"></script>
+		<script src="core/load_resources.js"></script>
 	</body>
-</html>
+</html>s
