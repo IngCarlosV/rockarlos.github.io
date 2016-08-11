@@ -31,7 +31,7 @@ Q.Sprite.extend("Jugador",
 			sheet : "sJugador",
 			frame : 1,
 			jumpSpeed : -600,
-			speed : 1200,
+			speed : 500,
 			z : 3,
 			alturaEscenario : Q("TileLayer").first().p.h
 		});
