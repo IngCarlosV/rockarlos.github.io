@@ -62,7 +62,7 @@ Q.scene("w0", function(stage)
       x: 5900
     }, function() 
     {
-    	window.open("../SMR/Monitor.html","_blank");
+    	window.open("../Monitor.html","_blank");
     	this.p.asset="umb/umb1_1.png";
     	this.p.x = this.p.x-102.5;
     }));
@@ -74,7 +74,7 @@ Q.scene("w0", function(stage)
       x: 5600
     }, function() 
     {
-    	window.open("../SMR/Bitacoras.html","_blank");
+    	window.open("../Bitacoras.html","_blank");
     	this.p.asset="umb/umb1_0.png";
     	this.p.y = this.p.y-150;
     	this.p.x = this.p.x+100;
@@ -87,7 +87,7 @@ Q.scene("w0", function(stage)
       x: 5900
     }, function() 
     {
-    	window.open("../SMR/Usuarios.html","_blank");
+    	window.open("../Usuarios.html","_blank");
     	this.p.asset="umb/umb0.png";
     	this.p.y= this.p.y+47;
     	this.p.x = this.p.x-103.7;
@@ -100,7 +100,7 @@ Q.scene("w0", function(stage)
       x: 6200
     }, function() 
     {
-    	window.open("../SMR/Logs.html","_blank");
+    	window.open("../Logs.html","_blank");
     	this.p.asset="umb/umb1_2.png";
     	this.p.y = this.p.y-150;
     	this.p.x = this.p.x+100;
@@ -113,7 +113,7 @@ Q.scene("w0", function(stage)
       x: 5900
     }, function() 
     {
-    	window.open("../SMR/Configuracion.html","_blank");
+    	window.open("../Configuracion.html","_blank");
     	this.p.asset="umb/umb2.png";
     	this.p.y = this.p.y-47.5;
     	this.p.x = this.p.x-100;
