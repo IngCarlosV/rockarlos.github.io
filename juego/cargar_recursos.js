@@ -308,7 +308,7 @@ $("#boton-pausa").click(function() {
 		//EN  ESTE MOMENTO ES MUY DIFICIL
 		//EN QUINTUS hacer que una cancion siga desde el mmomento
 		//en que la pasaron
-		Q.audio.play("tema_superficie.mp3");
+		//Q.audio.play("tema_superficie.mp3");
 		
 		Q.pausado = false;
 		esteBoton.html("Pausar");
